@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-family: cursive;
+    font-size: 6vw;
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 1.3em;
+    line-height: 2.0em;
+    font-family: cursive;
+}
+section > p{
+padding-bottom: 2em;
+}
+section.normal{
+    color: black;
+    background-color: white;
+}
+section.imagem{
+    color: white;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    display: inline-block;
+    box-shadow: 1px 1px 0px black;
+    background-color: rgba(0, 0, 0, 0.367);
+    padding: 5px;
+    border-radius: 10px;
+}
+section#q1{
+    background-image: url(../imagens/img1.jpg);
+    background-position: right center;
+}
+section#q2{
+    background-image: url(../imagens/img2.1.jpg);
+    background-position: center center;
+}
+section#q3{
+    background-image: url(../imagens/img3.jpg);
+    background-position: right bottom;
+
+}
+footer{
+    background-color: blue;
+    text-align: center;
+    padding-top: 5px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Matemática</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <canvas id="fundoAnimado" ></canvas>
+    <header>
+        <section id="botaoTopo">
+            <input type="button" value="≣" onclick="toggleMenu()" id="botaoMenu">
+            <span id="titulo">Cálculos Matemáticos</span>
+        </section>
+    </header>
+
+    <div id="menu">
+     <ul>
+        <li>Equação Completa: ax² + bx + c = 0</li>
+        <li>Equação Incompleta: ax² + bx = 0 ou ax² + c = 0</li>
+    </ul>
+    </div>
+
+    <section>
+       <h2>Digite os coeficientes da equação:</h2> 
+       <label>a:</label>
+       <input type="number" id="a" step="any" placeholder="Coeficiente a"> <br>
+       <label>b:</label>
+       <input type="number" id="b" step="any" placeholder="Coeficiente b" > <br>
+       <label>c:</label>
+       <input type="number" id="c" step="any"  placeholder="Coeficiente c"> <br> 
+       <button onclick="resolverEquacao()" >Resolver</button>
+       <button onclick="limparCampos()" >Limpar </button>
+       
+          <div id="resultado" style="white-space: pre-line;" ></div>
+    </section>
+ 
+<script src="app.js"></script>
+</body>
+</html>

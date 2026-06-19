@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar</title>
+    <style>
+        /*
+        SELETORES PERRSOLNALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elements
+        > = children ( div >p ou div::after>p)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: blue;
+        }
+        .especial{
+            background-color: rgb(233, 151, 151);
+        }
+        /*PSEUDO ELEMENTARES*/
+        a.especial::before{
+            content: '→';
+        }
+        a.especial::after{
+            content: '[link]';
+            color: rgb(162, 2, 2);
+            font-weight: normal;
+            text-decoration: none;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Listas</h1>
+    <ul>
+        <li><a href="https://github.com/DaniloRita/Danilo-Rita" target="_blank" >Repositório no GitHub</a></li> 
+        <li><a href="https://youtube.com//daniscarline/" class="especial">Canal do youtube</a></li>
+        <li><a href="https://www.messenger.com/e2ee/t/8035985459786294/">Facebook</a></li>
+    </ul>
+    
+</body>
+</html>

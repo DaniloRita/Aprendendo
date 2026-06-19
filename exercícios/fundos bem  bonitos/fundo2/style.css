@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(270deg, #ff0099, #00ffff, #ffcc00, #ff00ff);
+    background-size: 800% 800%;
+    animation: fundoGradient 20s ease infinite;
+}
+
+@keyframes fundoGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 10px);
+    animation: slideLines 5s linear infinite;
+    z-index: -1;
+}
+
+@keyframes slideLines {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 50%; left: 50%;
+    width: 200vw; height: 200vh;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    transform: translate(-50%, -50%) scale(1);
+    animation: pulse 5s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(0.8); }
+    100% { transform: translate(-50%, -50%) scale(1.2); }
+}

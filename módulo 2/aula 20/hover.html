@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        div:hover{
+            color: red;
+        }
+        /*ESCONDER A DIV*/
+        div > div#aulas{
+            display: none;
+        }
+        /*MOSTRA A DIV*/
+        div:hover > div#aulas{
+            display: block;
+            color: white;
+            
+           
+        }
+        div.aula{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            text-align: center;
+            background-color: green;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding-top:10px ;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui para saberes mais.
+        <div id="aulas">
+            <div class="aula">01</div>
+            <div class="aula">02</div>
+            <div class="aula">03</div>
+        </div>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimimui  o tamanho do seu navegador </p>
+    <picture>
+        <source media="(max-width:350 )" srcset="../imagem/p1.png" type="image/png">
+        <source media="(max-width:750px )" srcset="../imagem/m1.png" type="image/png">
+        <img src="../imagem/g1.png" alt="foto principal">
+    </picture>
+    <h2>Podes escutar a música</h2>
+    <p>clicando no botão em baixo.</p>
+    <audio src="../musica/3 Finer  Piporô   Diamante (Álbum) ( Visualizer ).mp3" preload="metadata" controls  preload="metadata"></audio>
+    <p><a href="../musica/3 Finer  Piporô   Diamante (Álbum) ( Visualizer ).mp3">Para Download clique aqui.</a></p>
+    <h2>Vídeos hospedado localmente</h2>
+    <p>Podes também assistir o vídeo</p>
+    <video src="../musica/Maroon 5  Memories _TRADUÇÃO_.mp4" width="600" type="video/mp4" preload="metadata" controls ></video>
+
+    <video controls poster="../imagem/m1.png" width="600" loop>
+        <source src="../musica/Maroon 5  Memories _TRADUÇÃO_.mp4" type="video/mp4" >
+        <p>Seu navegador não tem compatibilidade com reprodução do vídeo</p>
+    </video>
+    
+</body>
+</html>

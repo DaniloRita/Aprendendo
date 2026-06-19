@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Matemática</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #827e7e;
+        }
+        #botaoMenu{
+            border-radius: 5px;
+            font-size: 20px;
+            color: #1405ed;
+            background-color: #7e7a7a;
+        }
+        #botaoTopo{
+            background-color: #817c7c;
+            margin-top: -7px;
+            width: 100%;
+            padding: 10px;
+        }
+        #menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background-color:#ccc;
+            padding: 20px;
+            font-size:large;
+            z-index: 9999;
+            transform: translateX(100%);
+            transition: transform 0.4s ease;
+        }
+        #menu.show {
+            transform: translateX(0);
+        }
+        #titulo {
+            font-family: 'Times New Roman';
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+            color: #1405ed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section id="botaoTopo">
+            <input type="button" value="≣" onclick="toggleMenu()" id="botaoMenu">
+            <span id="titulo">Cálculos Matemáticos</span>
+        </section>
+    </header>
+
+    <div id="menu">
+        <ul>
+            <li>Equação do 2º grau completa</li>
+            <li>....</li>
+        </ul>
+    </div>
+
+    <section>
+        desenvolvimento
+    </section>
+
+    <script>
+        const menu = document.getElementById("menu");
+
+        function toggleMenu() {
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

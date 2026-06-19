@@ -1,0 +1,87 @@
+body{
+    background: #222;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.personagem{
+    position: relative;
+}
+.cabelo{
+    background: red;
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.cabeca{
+    width: 80px;
+    height: 80px;
+    background: #f1c27d;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.olho{
+    width:8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+}
+.olho.esq{
+    left: 20px;
+}
+.olho.dir{
+    right: 20px;
+}
+.corpo{
+    width: 100px;
+    height: 120px;
+    background: blue;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.braco{
+    width: 20px;
+    height: 100px;
+    background: #f1c27d;
+    position: absolute;
+    top: 10px;
+    border-radius: 10px;
+
+    
+}
+.braco.esq{
+    left: -20px;
+
+}
+.braco.dir{
+    right: -20px;
+}
+.pernas{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin: auto;
+
+}
+.perna{
+    width: 20px;
+    height: 100px;
+    background: #333;
+    border-radius: 10px;
+    position: absolute;
+
+}
+.perna.dir{
+    left: 5px;
+}
+.perna.esq{
+    right: 5px;
+}

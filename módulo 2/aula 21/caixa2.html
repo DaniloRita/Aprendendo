@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt_PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping tags</title>
+  <style>
+    body{
+      font-family: sans-serif;
+      background-color: #ccc;
+    }
+    header > h1{
+      background-color: #fbf9f9;
+      padding: 20px;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: 1px 1px 1px #474747cc;
+      }
+    nav{
+      background-color: #373636;
+       box-shadow:0px 0px 10px 5px #0f0f0f5b;
+    }
+    nav > a{
+      text-decoration: none;
+      color: #f8f6f6;
+      margin-right: 30px;
+      font-weight: bold;
+    }
+    nav > a:hover{
+      text-decoration: underline;
+      color: #1203de;
+    }
+    section{
+      background-color: #a2a2a2;
+    }
+    article > aside{
+      background-color: #565555;
+    }
+    footer{
+      background-color: #030303;
+      color: #ccc;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    div >p#botao{
+      color: #ccc;
+      background-color: #0c18ef;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 5px 5px 5px 0px;
+      box-shadow: inset 0px 0px 5px 10px #010997;
+    }
+    footer > p{
+      margin: 0px;
+    }
+    section#humano{
+      align-items: center;
+      justify-content: center;
+      flex-direction: center;
+    }
+    div#bola{
+      background: radial-gradient(circle,#4a1111 30%,blue 60%,#4a1111 20%);
+      width: 90px;
+      height: 100px;
+      border: 1px;
+      margin-top: 10px;
+      border-radius: 50%;
+      box-shadow: inset 0px 0px 10px 5px #4a1111;  
+    }
+    div#pescoco{
+      width: 30px;
+      height: 30px;
+      background-color: #010997;
+      margin-left: 30px;
+      margin-top: -3px; }
+
+      div#corpo{
+        width: 120px;
+        height: 150px;
+        background-color: #010997;
+        border-radius: 20px 20px 0px 0px;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu site de apredizagem</h1>
+    <nav>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>             
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </nav>
+  </header>
+  <main>
+    <p>Esportes, Política e Tecnologia</p>
+    <section>
+      <h2>Notícia sobre o Brasil</h2>
+      <article>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio autem, rem, iste vel voluptatibus consectetur sit deserunt cum earum aliquam molestias repellendus tenetur? Labore recusandae illo, doloribus neque aliquam architecto.</p>
+        <aside>
+          <p>Artigo escrito por Danilo Rita Trs</p>
+        </aside>
+      </article>
+    </section>
+  </main>
+  <div>
+    <p id="botao">bola</p>
+  </div>
+  <footer>
+    <p>Desenvolvido por Daniritmo</p>
+  </footer>
+  <section id="humano">
+    <div id="bola"></div>
+    <div id="pescoco"></div>
+    <div id="corpo"></div>
+  </section>
+</body>
+</html>

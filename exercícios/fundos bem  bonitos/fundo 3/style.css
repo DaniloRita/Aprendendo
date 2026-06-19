@@ -1,0 +1,124 @@
+/* FONDO PROFISSIONAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+}
+
+/* Canvas do fundo */
+#fundoAnimado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #0a0a0a;
+}
+
+/* Menu superior */
+#botaoTopo {
+    background-color: rgba(20, 20, 20, 0.7);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#botaoMenu {
+    border-radius: 5px;
+    font-size: 20px;
+    color: #0ff;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid #0ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#botaoMenu:hover {
+    box-shadow: 0 0 15px #0ff;
+}
+
+#titulo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0ff;
+}
+
+/* Menu lateral */
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    transform: translateX(100%);
+    transition: 0.4s;
+    border-left: 2px solid #0ff;
+    z-index: 999;
+}
+
+#menu.show {
+    transform: translateX(0);
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #0ff;
+}
+
+/* Conteúdo */
+#conteudo {
+    position: relative;
+    padding: 40px;
+    max-width: 500px;
+    margin: 100px auto;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0ff;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 2px solid #0ff;
+    background-color: rgba(0,0,0,0.5);
+    color: #0ff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #0ff;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0ff;
+    font-size: 18px;
+}
