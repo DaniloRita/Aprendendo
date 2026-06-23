@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(164, 164, 247);
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            background-image: linear-gradient(to right, rgb(103, 103, 226), rgb(62, 62, 215), rgb(31, 31, 153));
+        }
+        td, th{
+            border: 1px solid rgb(137, 136, 136);
+            padding: 10px;
+            color: rgb(204, 200, 200);
+            font-weight: bolder;
+        }
+        thead, tfoot{
+            color: white;
+            background-color: gray;
+        }
+        td.num::after{
+            content: "\00A0\1F891";
+        }
+        td.num{
+            text-align: right;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD TH
+        TFOOT
+            TR, TD, TH
+        -->
+    <table>
+        <thead>
+            <tr>
+                <th>Distrito</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Água Grande</td>
+                <td class="num">80.700</td>
+            </tr>
+            <tr>
+                <td>Mé-Zochi</td>
+                <td class="num">50.700</td>
+            </tr>
+            <tr>
+                <td>Lobata</td>
+                <td class="num">23.000</td>
+            </tr>
+            <tr>
+                <td>Cantagalo</td>
+                <td class="num">21.300</td>
+            </tr>
+            <tr>
+                <td>Lembá</td>
+                <td class="num">16.700</td>
+            </tr>
+            <tr>
+                <td>Caué</td>
+                <td class="num">7.300</td>
+            </tr>
+            <tr>
+                <td>Pagué</td>
+                <td class="num">9.800</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Total de habitantes</th>
+            <td class="num">00000</td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
